@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    min-width: 290px;
+    color: black;
+}
+
+#nav-bar {
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    min-width: 260px;
+    background: white;
+    border-right: 2px solid #4d4e53;
+}
+
+#nav-bar header {
+    margin: 10px 0;
+    font-size: 1em;
+    text-align: center;
+}
+
+#nav-bar ul {
+    height: 88%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 2px solid #4d4e53;
+    color: #4d4e53;
+}
+
+#nav-bar ul li {
+    list-style-type: none;
+    border-top: 1px solid #4d4e53;
+    padding: 10px;
+}
+
+#nav-bar ul li a {
+    color: #4d4e53;
+    text-decoration: none;
+}
+
+#nav-bar ul li a:hover {
+    color: blue;
+}
+
+#main-doc {
+    padding: 1rem;
+}
+
+.main-section {
+    margin: 1em 0;
+    margin-left: 310px;
+}
+
+.main-section header {
+    font-size: 2em;
+    padding: 10px 0;
+}
+
+.main-section article {
+    margin-left: 3%;
+    line-height: 1.7em;
+    color: #4d4e53;
+}
+
+.main-section article p {
+    padding: 10px 0;
+}
+
+.main-section article li {
+    margin-left: 1em;
+    list-style-type: circle;
+}
+
+.main-section article ul li {
+    margin-left: 2em;
+    list-style-type: disc;
+}
+
+code {
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: pre-line;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    position: relative;
+    text-align: none;
+    background: #ff77ff;
+    display: block;
+    margin: 15px;
+    padding: 0 10px 10px 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 850px) {
+    #nav-bar {
+        position: relative;
+        top: 0px;
+        height: 300px;
+        width: 100%;
+        min-width: 290px;
+        background: white
+    }
+    #nav-bar header {
+        height: 20%;
+    }
+    #nav-bar ul {
+        height: 80%;
+    }
+    #nav-bar ul li {
+        padding: 10px;
+    }
+    #main-doc {
+        position: relative;
+        margin-top: 20px;
+        margin-left: 0px
+    }
+    .main-section {
+        margin: 1em 0;
+        margin-top: 0
+    }
+}

@@ -1,0 +1,70 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 52px;
+}
+
+#main {
+    background-color: rgb(114, 156, 156);
+    border-radius: 5px;
+    margin: 40px 5px 40px 0px;
+    padding-bottom: 30px;
+}
+
+img {
+    max-width: 30%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+#img-caption {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin: 15px 0 5px 0;
+}
+
+#img-div {
+    margin: 20px 10px 20px 10px;
+    padding: 20px;
+    background-color: white;
+}
+
+#title {
+    margin-bottom: 0px;
+    padding-top: 30px;
+}
+
+#tribute-info {
+    padding: 0px 10% 0px 10%;
+}
+
+quote {
+    font-style: italic;
+}
+
+a {
+    color: #477ca7;
+}
+
+a:visited {
+    color: #74638f;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+        line-height: 1;
+    }
+    #main {
+        margin: 0;
+    }
+    #img-caption {
+        font-size: 0.8rem;
+    }
+    p {
+        font-size: 13px;
+    }
+}

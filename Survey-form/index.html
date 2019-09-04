@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="Survey-form.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <title>Which Dog Breed Do You Like?</title>
+</head>
+
+<body>
+    <main id="main">
+        <div id="header">
+            <h1 id="title">Survey form</h1>
+        </div>
+        <div id="form-outer">
+            <p id="description">Please take a moment to fill out this quick survey to help us improve our services.</p>
+            <form id="survey-form" method="GET" action="#">
+                <!---->
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="name-label">Name:</label>
+                    </div>
+                    <div class="rightTab">
+                        <div class="form-input">
+                            <input autofocus type="text" name="name" id="name" class="input-field"
+                                placeholder="Enter full name" required>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="email-label" for="email">Email:</label>
+                    </div>
+                    <div class="rightTab">
+                        <div class="form-input">
+                            <input type="email" name="email" id="email" class="input-field" required
+                                placeholder="Enter your email">
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="number-label">Age:</label>
+                    </div>
+                    <div class="rightTab">
+                        <div class="form-input">
+                            <input type="number" name="age" id="number" min="1" max="120" class="input-field"
+                                placeholder="Enter age" required>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="job-label" for="job">If you don’t mind can I ask about your occupation?</label>
+                    </div>
+                    <div class="rightTab">
+                        <input type="text" name="job" id="job" class="input-field" placeholder="Your job">
+                    </div>
+                </div>
+                <!---->
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="dagQ">Do you like dogs?</label>
+                    </div>
+                    <div class="rightTab">
+                        <select id="dropdown" name="dogQ" class="dropdown">
+                            <option disabled value>Select one:</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                </div>
+                <!---->
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for="dogQ2">Would you purchase a dog?</label>
+                    </div>
+                    <div class="rightTab">
+                        <ul style="list-style: none;" id="purchasedog_Q">
+                            <li>
+                                <label><input name="purchasedog" value="1" type="radio" class="radio-class">Yes</label>
+                            </li>
+                            <li>
+                                <label><input name="purchasedog" value="2" type="radio"
+                                        class="radio-class">Maybe</label>
+                            </li>
+                            <li>
+                                <label><input name="purchasedog" value="3" type="radio" class="radio-class">No</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!---->
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for="dog-breed-q">Favorite dog breed (check all that apply):</label>
+                    </div>
+                    <div class="rightTab">
+                        <ul style="list-style: none;" id="dog-breed">
+                            <li><label><input name="dog-breed" value="1" type="checkbox"
+                                        class="checkbox-class">Chihuahua</label></li>
+                            <li><label><input name="dog-breed" value="2" type="checkbox"
+                                        class="checkbox-class">Poodle</label></li>
+                            <li><label><input name="dog-breed" value="3" type="checkbox"
+                                        class="checkbox-class">Husky</label></li>
+                        </ul>
+                    </div>
+                </div>
+                <!---->
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for="comment">
+                            Any Comments or Suggestions?
+                        </label>
+                    </div>
+                    <div class="rightTab">
+                        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comments"
+                            placeholder="Enter your comment here..."></textarea>
+                    </div>
+                </div>
+                <!---->
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
